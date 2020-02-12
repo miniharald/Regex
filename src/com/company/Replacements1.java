@@ -20,7 +20,7 @@ public class Replacements1 {
         List<String> list = Arrays.asList(newString.split("\n"));
         List<String> newList = list
                 .stream()
-                .filter(s -> s.isBlank())
+                .filter(s -> !s.isBlank())
                 .collect(Collectors.toList());
         newList.forEach(System.out::println);
     }
